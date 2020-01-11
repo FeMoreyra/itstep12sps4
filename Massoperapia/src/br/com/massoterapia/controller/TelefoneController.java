@@ -11,31 +11,31 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 
-import br.com.massoterapia.facade.PessoaFacade;
-import br.com.massoterapia.model.Pessoa;
 
+import br.com.massoterapia.facade.TelefoneFacade;
+import br.com.massoterapia.model.Telefone;
 
-
-@Path("/pessoa")
-public class PessoaController {
-	
+@Path("/telefone")
+public class TelefoneController {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/listarPessoas")
+	@Path("/listarTelefones")
 
-	public List<Pessoa> listarTodasPessoas(@Context HttpHeaders httpHeaders) {
-		List<Pessoa> pessoas = new ArrayList<Pessoa>();
-		PessoaFacade pessoaFacade = new PessoaFacade();
+	public List<Telefone> listarTelefones(@Context HttpHeaders httpHeaders) {
+		List<Telefone> telefones = new ArrayList<Telefone>();
+		TelefoneFacade telefoneFacade = new TelefoneFacade();
 		
 		try {
-			pessoas = pessoaFacade.listarTodasPessoas();
+			telefones = telefoneFacade.listarTelefones();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 		
-		return pessoas;
+		return telefones;
 	}
+	
 
+	
 }

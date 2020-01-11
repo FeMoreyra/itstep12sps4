@@ -11,31 +11,31 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 
-import br.com.massoterapia.facade.PessoaFacade;
-import br.com.massoterapia.model.Pessoa;
 
+import br.com.massoterapia.facade.EnderecoFacade;
+import br.com.massoterapia.model.Endereco;
 
-
-@Path("/pessoa")
-public class PessoaController {
-	
+@Path("/endereco")
+public class EnderecoController {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/listarPessoas")
+	@Path("/listarEnderecos")
 
-	public List<Pessoa> listarTodasPessoas(@Context HttpHeaders httpHeaders) {
-		List<Pessoa> pessoas = new ArrayList<Pessoa>();
-		PessoaFacade pessoaFacade = new PessoaFacade();
+	public List<Endereco> listarEnderecos(@Context HttpHeaders httpHeaders) {
+		List<Endereco> enderecos = new ArrayList<Endereco>();
+		EnderecoFacade enderecoFacade = new EnderecoFacade();
 		
 		try {
-			pessoas = pessoaFacade.listarTodasPessoas();
+			enderecos = enderecoFacade.listarEnderecos();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 		
-		return pessoas;
+		return enderecos;
 	}
+	
 
+	
 }

@@ -1,11 +1,7 @@
 package br.com.massoterapia.dao;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
+import java.sql.*;
 public class JdbcDAOFactory {
-
+	
 	private Connection connection;
 
 	public JdbcDAOFactory() throws SQLException {
@@ -13,7 +9,7 @@ public class JdbcDAOFactory {
 		try {
 						
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			this.connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","SYSTEM","root");
+			this.connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SYSTEM", "root");
 			
 		} catch (Exception e) {
 
@@ -27,5 +23,5 @@ public class JdbcDAOFactory {
 	public Connection getConexao() {
 		return this.connection;
 	}
-		
+
 }
