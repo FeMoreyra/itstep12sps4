@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+C:\12SPS4\Pessoas\Massoperapia\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+749830481.index
+2303914633.index
+835814563.index
+3711416834.index
+2262525571.index
+1347138123.index
+1585795103.index
+3893923377.index
+3078904207.index
+415972381.index
+3148037302.index
+3198235004.index
+3206785994.index

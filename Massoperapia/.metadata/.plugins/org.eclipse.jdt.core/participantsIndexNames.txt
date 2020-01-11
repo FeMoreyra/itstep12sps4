@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\12SPS4\Pessoas\Massoperapia\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\737416516.index
+\PessoasClient\src
+C:\12SPS4\Pessoas\Massoperapia\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1019258251.index
+\Aula_01\src
+C:\12SPS4\Pessoas\Massoperapia\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2192688361.index
+\Meunome\src
